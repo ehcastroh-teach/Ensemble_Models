@@ -113,3 +113,14 @@ jupyter notebook 02_ensemble_methods_and_automl.ipynb
 - LightAutoML: sb-ai-lab/LightAutoML (https://github.com/sb-ai-lab/LightAutoML)
 - FlaML: microsoft/FLAML (https://github.com/microsoft/FLAML)
 - Ensemble theory foundations: Hastie, Tibshirani, and Friedman, *The Elements of Statistical Learning*
+---
+
+## Contact
+
+<div align="center">
+  <img src="images/thumbnails/ehcastroh_teach_banner_flower.png" alt="ehcastroh" width="90" style="border-radius: 50%;" />
+
+  <sub>ehcastroh</sub>
+
+  <a href="https://github.com/ehcastroh">GitHub</a> · <a href="https://www.linkedin.com/in/ehcastroh/">LinkedIn</a>
+</div>
