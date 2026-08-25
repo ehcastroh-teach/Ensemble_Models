@@ -1,0 +1,14 @@
+# Core data science
+pandas>=1.5
+numpy>=1.23
+matplotlib>=3.6
+seaborn>=0.12
+scikit-learn>=1.2
+
+# AutoML frameworks
+# TODO: verify minimum compatible versions before pinning (retrieved 2026-08-25)
+lightautoml>=0.3.0
+flaml>=1.0.0
+
+# LightAutoML dependency
+torch>=1.13
