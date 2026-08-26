@@ -24,6 +24,8 @@ After working through both notebooks, you will be able to:
 | `h2oai_experiment_macewube_test_predictions.csv` | Probability predictions from a separately-run H2O AutoML experiment |
 | `01_titanic_eda_and_feature_engineering.ipynb` | Notebook 1 - EDA, feature engineering, and preprocessing |
 | `02_ensemble_methods_and_automl.ipynb` | Notebook 2 - Ensemble concepts, LightAutoML, FlaML, and model averaging |
+| `titanic_eda_and_feature_engineering_homework.ipynb` | Homework for Notebook 1 - Apply EDA and feature engineering to the Breast Cancer Wisconsin dataset |
+| `ensemble_methods_and_automl_homework.ipynb` | Homework for Notebook 2 - Apply ensemble methods to the Wine Recognition dataset using scikit-learn |
 | `requirements.txt` | Python package dependencies |
 
 ## Workflow
