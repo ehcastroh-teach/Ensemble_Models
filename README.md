@@ -72,18 +72,25 @@ ensemble_avg_th050.csv  (Kaggle submission)
 
 ## How to Run
 
+Prerequisites: [Nix](https://nixos.org/download) with flakes enabled.
+
+This repo's Python environment is fully project-local - a `flake.nix` devShell provides Python and `uv`, and `uv` installs every dependency pinned in `pyproject.toml`/`uv.lock` into a `.venv` inside this directory. Nothing is installed system-wide.
+
 ```bash
 # 1. Clone the repo and navigate into it
 git clone https://github.com/ehcastroh-teach/Ensemble_Models.git
 cd Ensemble_Models
 
-# 2. Install dependencies
-pip install -r requirements.txt
+# 2. Enter the project's dev shell - this also runs `uv sync` automatically
+#    the first time, creating .venv with every pinned dependency installed
+nix develop
 
 # 3. Launch Jupyter and open the notebooks in order
-jupyter notebook 01_titanic_eda_and_feature_engineering.ipynb
-jupyter notebook 02_ensemble_methods_and_automl.ipynb
+uv run jupyter notebook 01_titanic_eda_and_feature_engineering.ipynb
+uv run jupyter notebook 02_ensemble_methods_and_automl.ipynb
 ```
+
+If you don't use Nix, any Python 3.12+ environment with `uv` installed works the same way: run `uv sync` in place of `nix develop` and use the `uv run ...` commands above unchanged.
 
 **Runtime note:** Notebook 1 completes in under 5 minutes on any modern laptop. Notebook 2 runs each AutoML framework for 300 seconds (5 minutes) - total runtime is approximately 15 minutes. Reduce the `TIMEOUT` constant at the top of Notebook 2 to shorten training at the cost of search quality.
 

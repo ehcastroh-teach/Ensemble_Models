@@ -1,0 +1,15 @@
+[project]
+name = "ensemble-models"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.12"
+dependencies = [
+    "flaml>=1.0.0",
+    "lightautoml>=0.3.0",
+    "matplotlib>=3.6",
+    "numpy>=1.23",
+    "pandas>=1.5",
+    "scikit-learn>=1.2",
+    "seaborn>=0.12",
+    "torch>=1.13",
+]
